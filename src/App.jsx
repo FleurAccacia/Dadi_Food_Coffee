@@ -7,20 +7,16 @@ const menuCategories = [
     label: "Starters",
     plats: [
       {
-        nom: "Cheese Sticks",
-        description: "Bâtonnets de mozzarella panés, sauce marinara maison",
+        nom: "Chicken Panko",
+        description: "Poulet Panés vendus par 3 , 4 ou 6 ",
         prix: "7€",
       },
       {
-        nom: "Wings DADi",
-        description: "Ailes de poulet, sauce buffalo ou miel-sriracha",
+        nom: "Croquestas",
+        description: "Bombes vendus par 3 , 4 ou 6 ",
         prix: "9€",
       },
-      {
-        nom: "Onion Rings",
-        description: "Rondelles d'oignons croustillantes, sauce ranch",
-        prix: "6€",
-      },
+
     ],
   },
   {
@@ -28,17 +24,43 @@ const menuCategories = [
     label: "Burgers",
     plats: [
       {
-        nom: "DADi Burger",
-        description: "Steak maison, cheddar, sauce secrète DADi",
-        prix: "12€",
+        nom: "Air cheesburger",
+        description: "Steak maison, cheddar, sauce secrète DADi ",
+        
+        prix: "9,90€",
       },
       {
-        nom: "Crispy Burger",
+        nom: "Smash Air-Cheesburger",
         description: "Poulet croustillant, pickles, mayo maison",
         prix: "11€",
       },
       {
-        nom: "Double Smash",
+        nom: "Dadi",
+        description: "Double steak smashé, oignons caramélisés",
+        prix: "14€",
+      },
+      {
+        nom: "SmashDadi",
+        description: "Double steak smashé, oignons caramélisés",
+        prix: "14€",
+      },
+      {
+        nom: "Panko",
+        description: "Poulet pané, oignons caramélisés",
+        prix: "14€",
+      },
+      {
+        nom: "Pankot🔥",
+        description: "Double steak smashé, oignons caramélisés",
+        prix: "14€",
+      },
+      {
+        nom: "Mama🔥",
+        description: "Double steak smashé, oignons caramélisés",
+        prix: "14€",
+      },
+      {
+        nom: "Veggie🍃",
         description: "Double steak smashé, oignons caramélisés",
         prix: "14€",
       },
@@ -442,9 +464,19 @@ function OurFood() {
       desc: "Vendus par 2 , Smashés, gourmands",
     },
     {
+      img: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=600&q=80",
+      titre: "Nos Rolls",
+      desc: "Gourmands",
+    },
+    {
       img: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80",
       titre: "Nos Bowls",
       desc: "Frais, colorés, équilibrés",
+    },
+    {
+      img: "https://images.",
+      titre: "Nos Crousty et Macs",
+      desc: "Copieux, délicieux",
     },
     {
       img: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&q=80",
@@ -455,6 +487,11 @@ function OurFood() {
       img: "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=600&q=80",
       titre: "Nos Boissons",
       desc: "Matchas, smoothies, bubble tea",
+    },
+    {
+      img: "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600&q=80",
+      titre: "Brunch",
+      desc: "Divers variétés de goûts",
     },
   ];
 
@@ -496,6 +533,9 @@ function Menu() {
       <div className="container">
         <span className="label-tag center">Ce qu'on propose</span>
         <h2 className="section-title">Notre carte</h2>
+        <p className="section-sub">
+          Des menus disponible en little (plats, boisson) et big (plats, boisson, dessert)
+        </p>
 
         {/* Onglets des catégories */}
         <div className="menu-tabs">
@@ -547,6 +587,7 @@ function Infos() {
               </svg>
             </div>
             <h3>Adresse</h3>
+            <p>9 Av. Benoît Frachon, 38400 Saint-Martin-d'Hères</p>
             <p>Grenoble, Isère (38)</p>
             <p>Rhône-Alpes</p>
           </div>
@@ -563,8 +604,8 @@ function Infos() {
               </svg>
             </div>
             <h3>Horaires</h3>
-            <p>Lun – Ven : 8h – 18h</p>
-            <p>Sam – Dim : 9h – 20h</p>
+            <p>Lun – Jeu : 09:30 – 22:00</p>
+            <p>Ven – Dim : 9h30 – 22h30</p>
           </div>
           <div className="info-card">
             <div className="info-icon-wrap">
@@ -578,6 +619,7 @@ function Infos() {
               </svg>
             </div>
             <h3>Contact</h3>
+            <p>04 76 42 87 71</p>
             <p>@dadi_food_and_coffee</p>
             <p>contact@dadi-grenoble.fr</p>
           </div>
@@ -592,7 +634,9 @@ function Footer() {
     <footer className="footer">
       <p className="footer-logo">Dadi</p>
       <p className="footer-sub">Food &amp; Coffee</p>
-      <p className="footer-copy">© 2024 DADi · Grenoble · Fait avec React</p>
+      <p className="footer-copy">
+        © 2026 DADi · Grenoble · Restauration Rapide
+      </p>
     </footer>
   );
 }
