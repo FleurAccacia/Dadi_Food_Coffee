@@ -16,7 +16,6 @@ const menuCategories = [
         description: "Bombes vendus par 3 , 4 ou 6 ",
         prix: "9€",
       },
-
     ],
   },
   {
@@ -26,7 +25,7 @@ const menuCategories = [
       {
         nom: "Air cheesburger",
         description: "Steak maison, cheddar, sauce secrète DADi ",
-        
+
         prix: "9,90€",
       },
       {
@@ -521,6 +520,23 @@ function OurFood() {
   );
 }
 
+function VideoSection() {
+  return (
+    <section className="video-section">
+      <div className="container">
+        <span className="label-tag center">Viens nous voir</span>
+        <h2 className="section-title">DADi en vrai</h2>
+        <p className="section-sub">
+          L'ambiance, le décor, la vibe... juge par toi-même
+        </p>
+        <div className="video-wrapper">
+          <video src="/video.mp4" controls playsInline poster="/logo.png" />
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Menu() {
   // useState : on mémorise quelle catégorie est active
   // quand on clique une catégorie, React re-affiche les bons plats
@@ -534,7 +550,8 @@ function Menu() {
         <span className="label-tag center">Ce qu'on propose</span>
         <h2 className="section-title">Notre carte</h2>
         <p className="section-sub">
-          Des menus disponible en little (plats, boisson) et big (plats, boisson, dessert)
+          Des menus disponible en little (plats, boisson) et big (plats,
+          boisson, dessert)
         </p>
 
         {/* Onglets des catégories */}
@@ -648,6 +665,7 @@ function App() {
       <Hero />
       <APropos />
       <OurFood />
+      <VideoSection />
       <Menu />
       <Infos />
       <Footer />
